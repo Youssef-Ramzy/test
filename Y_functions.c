@@ -8,4 +8,7 @@
  * @n: integer to print
  * Return: number of characters printed
  */
-int print_integer(int n);
+int print_integer(int n)
+{
+	/*put your code here joe*/
+}

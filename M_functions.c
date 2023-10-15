@@ -9,3 +9,16 @@ int _putchar(char c)
 {
 	return (write(1, &c, 1));
 }
+/**
+ * _len - returns the length of a string
+ * @s: string
+ * Return: length of string
+ */
+int _len(char *s)
+{
+	int i;
+
+	for (i = 0; s[i] != '\0'; i++)
+		;
+	return (i);
+}

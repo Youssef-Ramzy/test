@@ -20,7 +20,7 @@ int _pirntf(const char *format, ...)
 			count += Print_format(*(++format), ap);
 		else
 			count += _putchar(*format);
-		format++;
+		++format;
 	}
 	va_end(ap);
 	return (count);

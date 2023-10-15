@@ -1,6 +1,5 @@
 #ifndef MIAN_H
 #define MIAN_H
-
 /**
  * struct which_type - struct which_type
  * @type: type

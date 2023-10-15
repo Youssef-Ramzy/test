@@ -24,6 +24,10 @@ int print_format(char specifier, va_list ap)
 	case '%':
 		count += _putchar('%'); /* to print % */
 		break;
+	case 'd':
+	case 'i':
+		count += print_integer(va_arg(ap, int)); /* اعمل الفانكشن دي */
+		break;
 	default:
 		break;
 	}

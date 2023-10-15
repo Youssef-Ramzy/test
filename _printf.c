@@ -41,18 +41,24 @@ int print_format(char specifier, va_list ap)
 */
 int _printf(const char *format, ...)
 {
+	int i, count = 0;
 	va_list ap;
-	int count;
 
 	va_start(ap, format);
-	count = 0;
-	while (*format != '\0')
+	if (format == NULL)
+		return (-1);
+	for (i = 0; format[i] != '\0'; i++)
 	{
-		if (*format == '%')
-			count += Print_format(*(++format), ap); /* call print_format */
+		if (format[i] == '%')
+		{
+			count += print_format(format[i + 1], ap);
+			i++;
+		}
 		else
-			count += _putchar(*format); /* write the buffer */
-		++format;
+		{
+			_putchar(format[i]);
+			count++;
+		}
 	}
 	va_end(ap);
 	return (count);

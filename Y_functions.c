@@ -10,5 +10,17 @@
  */
 int print_integer(int n)
 {
-	/*put your code here joe*/
+	int count = 0;
+
+	if (n < 0)
+	{
+		count += _putchar('-');
+		n = -n;
+	}
+	if (n / 10)
+	{
+		count += print_integer(n / 10);
+	}
+	count += _putchar((n % 10) + '0');
+	return (count);
 }

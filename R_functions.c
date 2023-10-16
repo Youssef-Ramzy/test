@@ -2,7 +2,7 @@
 #include <stdarg.h>
 #include <unistd.h>
 #include <stdlib.h>
-
+/* max function per file only 5 */
 /**
  * print_string - prints a string
  * @s: string to print

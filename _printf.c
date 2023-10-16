@@ -2,13 +2,14 @@
 #include <stdarg.h>
 #include <limits.h>
 #include <stdlib.h>
+#include <stdio.h>
 
 /**
  * print_format - prints a string
  * @specifier: char to check
  * @ap: va_list
  * Return: number of characters printed
-*/
+ */
 int print_format(char specifier, va_list ap)
 {
 	int count = 0; /* number of characters printed */
@@ -38,7 +39,7 @@ int print_format(char specifier, va_list ap)
  * _printf - Just like printf
  * @format: string to print
  * Return: number of characters printed
-*/
+ */
 int _printf(const char *format, ...)
 {
 	int i, count = 0;

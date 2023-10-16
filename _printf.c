@@ -27,7 +27,7 @@ int print_format(char specifier, va_list ap)
 		break;
 	case 'd':
 	case 'i':
-		count += print_integer(va_arg(ap, int)); /* اعمل الفانكشن دي */
+		count += print_integer(va_arg(ap, int)); /* to print integer */
 		break;
 	default:
 		break;

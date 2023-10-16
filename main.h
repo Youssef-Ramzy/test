@@ -7,7 +7,7 @@
 int _putchar(char c);
 int _len(char *s);
 int print_string(char *s);
-int print_integer(int n); /*do this func bro*/
+int print_integer(int n);
 int print_format(char specifier, va_list ap);
 int _printf(const char *format, ...);
 

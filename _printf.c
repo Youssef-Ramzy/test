@@ -58,7 +58,7 @@ int _printf(const char *format, ...)
 		{
 			count += _putchar(*format);
 		}
-		format++;
+		++format;
 	}
 	va_end(ap);
 	return (count);
